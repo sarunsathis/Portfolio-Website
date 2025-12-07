@@ -1,33 +1,31 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import './styles/global.css'
+
+// Component Imports 
+import Header from './components/header/Header.jsx'
+import Paragraph from './components/paragraph/Paragraph.jsx'
+import WorkEx from './components/workEx/WorkEx.jsx'
+import TabContainer from './components/tabContainer/TabContainer.jsx'
+
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [selectedSection, setSelectedSection] = useState('home');
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Header stateVar={selectedSection} stateFunc={setSelectedSection} />
+
+      <TabContainer className={ selectedSection == 'home' ? 'd-block' : 'd-none' }>
+        <Paragraph buttonText="Download CV" secondaryButtonText="View Projects">
+            <p>Hi, I am</p>
+            <h1>Sarun S M</h1>
+            <p>I'm a passionate developer with a love for creating beautiful, functional, and user-centered digital experiences. With expertise in modern web technologies and a keen eye for design, I transform ideas into elegant solutions that make a difference.</p>
+            <p>My journey in tech has been driven by curiosity and a commitment to continuous learning. I specialize in building responsive web applications, crafting intuitive user interfaces, and solving complex problems with clean, maintainable code.</p>
+        </Paragraph>
+
+        <WorkEx/>
+      </TabContainer>
+
     </>
   )
 }
