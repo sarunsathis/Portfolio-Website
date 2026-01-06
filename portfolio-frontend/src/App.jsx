@@ -11,9 +11,14 @@ import TabContainer from './components/tabContainer/TabContainer.jsx'
 function App() {
   const [selectedSection, setSelectedSection] = useState('home');
 
+  function changeSelectedSection(selection) {
+    console.log(selection);
+    setSelectedSection(selection);
+  }
+
   return (
     <>
-      <Header stateVar={selectedSection} stateFunc={setSelectedSection} />
+      <Header stateVar={selectedSection} stateFunc={changeSelectedSection} />
 
       <TabContainer className={ selectedSection == 'home' ? 'd-block' : 'd-none' }>
         <Paragraph buttonText="Download CV" secondaryButtonText="View Projects">

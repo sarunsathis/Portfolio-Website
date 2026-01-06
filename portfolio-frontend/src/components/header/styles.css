@@ -1,0 +1,92 @@
+.header{
+    background-color: rgba(17, 24, 39, 0.8);
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    backdrop-filter: blur(6px);
+    padding: 1rem 0;
+}
+
+.header .logo-section{
+    padding-left: 1.5rem;
+    gap: 1.5rem;
+}
+.header .redirection-section{
+    padding-right: 1.5rem;
+    column-gap: 1.5rem;
+}
+.header .redirection-section .selected p{
+    color: #51a2ff;
+}
+
+.header .profile-pic{
+    width: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ffffff;
+}
+.header .logo-text{
+    font-size: 24px;
+    font-weight: 600;
+    color: #ffffff;
+    margin: 0px;
+}
+
+.info-popup{
+    top: 7vh;
+    left: 20vw;
+    width: 60vw;
+    background-color: #101828e6;
+    border: 2px solid #ffffff;
+    border-radius: 12px;
+    padding: 2rem;
+    gap: 1.5rem;
+    z-index: 3;
+    overflow-y: auto;
+}
+.info-popup .profile-pic{
+    width: 176px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 6px solid transparent;
+    margin: 0px;
+    background-image: linear-gradient(to right bottom, oklch(0.623 0.214 259.815) 0%, oklch(0.627 0.265 303.9) 100%);
+}
+.info-popup .profile-title{
+    font-size: 24px;
+    font-weight: 700;
+    background-image: linear-gradient(to right bottom, oklch(0.623 0.214 259.815) 0%, oklch(0.627 0.265 303.9) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.info-popup .profile-stats{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 85%;
+    gap: 8px;
+}
+.info-popup .profile-stats li{
+    padding: 16px;
+    border: 1px solid #364153;
+    border-radius: 12px;
+    background: color-mix(in srgb, #1e2939 50%, transparent);
+}
+.info-popup .profile-stats li div:first-child{
+    color: #99a1af;
+}
+.info-popup .profile-stats li div:last-child{
+    color: #51a2ff;
+}
+
+.overlay-bg{
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(10px);
+    z-index: 2;
+}
