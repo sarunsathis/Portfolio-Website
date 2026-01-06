@@ -22,10 +22,10 @@ function App() {
 
       <TabContainer className={ selectedSection == 'home' ? 'd-block' : 'd-none' }>
         <Paragraph buttonText="Download CV" secondaryButtonText="View Projects">
-            <p>Hi, I am</p>
-            <h1>Sarun S M</h1>
-            <p>I'm a passionate developer with a love for creating beautiful, functional, and user-centered digital experiences. With expertise in modern web technologies and a keen eye for design, I transform ideas into elegant solutions that make a difference.</p>
-            <p>My journey in tech has been driven by curiosity and a commitment to continuous learning. I specialize in building responsive web applications, crafting intuitive user interfaces, and solving complex problems with clean, maintainable code.</p>
+            <p className='m-0 fs-24'>Hi, I am</p>
+            <h1 className='m-0 pageTitle'>Sarun Menon</h1>
+            <p className='m-0 mb-16 fs-18 pageSummary'>I'm a passionate developer with a love for creating beautiful, functional, and user-centered digital experiences. With expertise in modern web technologies and a keen eye for design, I transform ideas into elegant solutions that make a difference.</p>
+            <p className='m-0 fs-18 pageSummary'>My journey in tech has been driven by curiosity and a commitment to continuous learning. I specialize in building responsive web applications, crafting intuitive user interfaces, and solving complex problems with clean, maintainable code.</p>
         </Paragraph>
 
         <WorkEx/>
