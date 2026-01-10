@@ -1,0 +1,96 @@
+.work-experience-section{
+    padding: 0px 24px;
+}
+.work-experience-section .section-title{
+    font-size: 32px;
+    font-weight: 600;
+    margin-top: 32px;
+}
+.work-experience-section .section-desc{
+    margin-top: 8px;
+    margin-bottom: 32px;
+    color: #94a3b8;
+    font-size: 18px;
+}
+
+.work-experience-section .workEx-cntr{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+}
+.work-experience-section .work-experience-card{
+    border: 1px solid #1e2939;
+    border-radius: 14px;
+    padding: 32px;
+    background-image: linear-gradient(to right bottom, #101828cc 0%, #10182866 100%);
+    width: 100%;
+
+}
+
+.work-experience-section .work-experience-card .logo-cntr{
+    padding: 12px;
+    border-radius: 12px;
+    /* background-color: green; */
+    background-image: linear-gradient(to right bottom, #2b7fff33 0%, #ad46ff33 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 16px;
+}
+.work-experience-section .work-experience-card .logo-cntr svg{
+    color: #51a2ff;
+}
+.work-experience-section .work-experience-card .workEx-duration{
+    text-align: end;
+    flex: 1;
+}
+.work-experience-section .work-experience-card .work-experience-location .company{
+    color: #ad46ff;
+}
+.work-experience-section .work-experience-card .workEx-duration *{
+    border-radius: 14px;
+    background-color: color-mix(in oklab, #1e2939 50%, transparent);
+    padding: 8px 16px;
+}
+
+.work-experience-card .description{
+    margin-top: 16px;
+    color: #d1d5dc;
+    font-size: 16px;
+}
+.work-experience-section .workEx-desc-cntr{
+    margin-top: 16px;
+    margin-bottom: 12px;
+    color: #99a1af;
+}
+.work-experience-section .workEx-desc-cntr .icon-cntr{
+    color: #05df72;
+}
+.work-experience-section .workEx-res{
+    margin-left: 16px;
+    padding-left: 16px;
+    color: #99a1af;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.work-experience-section .workEx-res li::marker{
+    color: #2563eb;
+}
+
+.work-experience-section .work-experience-keyPoints{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+    margin-top: 24px;
+}
+.work-experience-section .work-experience-keyPoints li{
+    background-image: linear-gradient(to right, #2b7fff1a 0%, #ad46ff1a 100%);
+    color: #51a2ff;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
