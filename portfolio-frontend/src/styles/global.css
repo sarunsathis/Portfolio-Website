@@ -27,6 +27,9 @@ body{
     margin-bottom: 16px;
 }
 
+.d-block{
+    display: block;
+}
 .d-flex{
     display: flex;
 }

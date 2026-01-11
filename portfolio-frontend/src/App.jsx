@@ -7,10 +7,12 @@ import Paragraph from './components/paragraph/Paragraph.jsx'
 import WorkEx from './components/workEx/WorkEx.jsx'
 import TabContainer from './components/tabContainer/TabContainer.jsx'
 import ProjectList from './components/projectList/ProjectList.jsx'
+import ColumnContainer from './components/columnContainer/columnContainer.jsx'
+import ContactForm from './components/contactForm/ContactForm.jsx'
 
 
 function App() {
-  const [selectedSection, setSelectedSection] = useState('project');
+  const [selectedSection, setSelectedSection] = useState('contact');
 
   function changeSelectedSection(selection) {
     console.log(selection);
@@ -39,6 +41,18 @@ function App() {
         </Paragraph>
 
         <ProjectList/>
+      </TabContainer>
+
+      <TabContainer className={ selectedSection == 'contact' ? 'd-block' : 'd-none' }>
+        <Paragraph>
+            <h2 className='m-0 pageTitle'>Get In Touch</h2>
+            <p className='m-0 mb-16 fs-18 pageSummary'>Have a project in mind? Let's work together</p>
+        </Paragraph>
+
+        <ColumnContainer>
+          <ContactForm/>
+          <div>Column 2</div>
+        </ColumnContainer>
       </TabContainer>
     </>
   )
