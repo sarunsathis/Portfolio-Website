@@ -12,10 +12,11 @@ import ContactForm from './components/contactForm/ContactForm.jsx'
 import ConnectNow from './components/connectNow/ConnectNow.jsx'
 import FollowMe from './components/followMe/FollowMe.jsx'
 import CurrentStatus from './components/currentStatus/CurrentStatus.jsx'
+import BlogList from './components/blogList/BlogList.jsx'
 
 
 function App() {
-  const [selectedSection, setSelectedSection] = useState('contact');
+  const [selectedSection, setSelectedSection] = useState('blogs');
 
   function changeSelectedSection(selection) {
     console.log(selection);
@@ -44,6 +45,15 @@ function App() {
         </Paragraph>
 
         <ProjectList/>
+      </TabContainer>
+
+      <TabContainer className={ selectedSection == 'blogs' ? 'd-block' : 'd-none' }>
+        <Paragraph>
+            <h2 className='m-0 pageTitle'>Blogs</h2>
+            <p className='m-0 mb-16 fs-18 pageSummary'>Thoughts, tutorials, and insights on various topics</p>
+        </Paragraph>
+
+        <BlogList/>
       </TabContainer>
 
       <TabContainer className={ selectedSection == 'contact' ? 'd-block' : 'd-none' }>

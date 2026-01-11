@@ -67,7 +67,7 @@ function Header(props) {
             <ul className="profile-stats">
                 <li className="align-items-center d-flex flex-row justify-content-between">
                     <div>Exprience</div>
-                    <div>2 Years</div>
+                    <div>4 Years</div>
                 </li>
                 <li className="align-items-center d-flex flex-row justify-content-between">
                     <div>Projects</div>
