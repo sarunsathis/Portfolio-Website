@@ -9,6 +9,7 @@ import TabContainer from './components/tabContainer/TabContainer.jsx'
 import ProjectList from './components/projectList/ProjectList.jsx'
 import ColumnContainer from './components/columnContainer/columnContainer.jsx'
 import ContactForm from './components/contactForm/ContactForm.jsx'
+import ConnectNow from './components/connectNow/ConnectNow.jsx'
 
 
 function App() {
@@ -51,7 +52,9 @@ function App() {
 
         <ColumnContainer>
           <ContactForm/>
-          <div>Column 2</div>
+          <div>
+            <ConnectNow/>
+          </div>
         </ColumnContainer>
       </TabContainer>
     </>

@@ -1,0 +1,38 @@
+.connect-cntr{
+    padding: 32px;
+    border: 1px solid #1e2633;
+    border-radius: 14px;
+    background-color: #0b101a;
+}
+.connect-cntr .connect-title{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 24px;
+    color: #f3f4f6;
+}
+.connect-cntr .connect-desc{
+    font-size: 16px;
+    margin-bottom: 16px;
+    color: #9ca3af;
+    text-align: justify;
+    line-height: 1.5;
+    margin-bottom: 24px;
+}
+
+.connect-cntr .connect-email svg{
+    color: oklch(71.4% 0.203 305.504);
+    background: oklab(0.627 0.147802 -0.219953 / 0.2);
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    padding: 8px;
+}
+.connect-cntr .connect-email a{
+    font-size: 16px;
+    color: #d1d5dc;
+    vertical-align: middle;
+    text-decoration: none;
+}
+.connect-cntr .connect-email p{
+    color: #6a7282;
+}
