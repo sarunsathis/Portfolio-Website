@@ -11,6 +11,7 @@ import ColumnContainer from './components/columnContainer/columnContainer.jsx'
 import ContactForm from './components/contactForm/ContactForm.jsx'
 import ConnectNow from './components/connectNow/ConnectNow.jsx'
 import FollowMe from './components/followMe/FollowMe.jsx'
+import CurrentStatus from './components/currentStatus/CurrentStatus.jsx'
 
 
 function App() {
@@ -56,6 +57,7 @@ function App() {
           <div>
             <ConnectNow/>
             <FollowMe/>
+            <CurrentStatus/>
           </div>
         </ColumnContainer>
       </TabContainer>

@@ -1,0 +1,16 @@
+.current-status-cntr{
+    padding: 32px;
+    border: 1px solid #ad46ff4d;
+    border-radius: 14px;
+    background: linear-gradient(to right, #2b7fff1a 0%, #ad46ff1a 100%);
+}
+
+.current-status-cntr .current-status-title{
+    font-size: 16px;
+    font-weight: 600;
+    color: #c27aff;
+}
+.current-status-cntr .current-status-text{
+    color: #d1d5dc;
+    margin: 0px;
+}
