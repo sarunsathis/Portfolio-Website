@@ -6,10 +6,11 @@ import Header from './components/header/Header.jsx'
 import Paragraph from './components/paragraph/Paragraph.jsx'
 import WorkEx from './components/workEx/WorkEx.jsx'
 import TabContainer from './components/tabContainer/TabContainer.jsx'
+import ProjectList from './components/projectList/ProjectList.jsx'
 
 
 function App() {
-  const [selectedSection, setSelectedSection] = useState('home');
+  const [selectedSection, setSelectedSection] = useState('project');
 
   function changeSelectedSection(selection) {
     console.log(selection);
@@ -31,6 +32,14 @@ function App() {
         <WorkEx/>
       </TabContainer>
 
+      <TabContainer className={ selectedSection == 'project' ? 'd-block' : 'd-none' }>
+        <Paragraph>
+            <h2 className='m-0 pageTitle'>Projects</h2>
+            <p className='m-0 mb-16 fs-18 pageSummary'>A collection of my recent work and side projects</p>
+        </Paragraph>
+
+        <ProjectList/>
+      </TabContainer>
     </>
   )
 }
