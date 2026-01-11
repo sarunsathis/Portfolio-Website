@@ -1,0 +1,20 @@
+.follow-me-cntr{
+    padding: 32px;
+    border: 1px solid #1e2633;
+    border-radius: 14px;
+    background-color: #0b101a;
+}
+
+.follow-me-cntr .follow-me-title{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 24px;
+    color: #f3f4f6;
+}
+.follow-me-cntr .social-icons-cntr a{
+    padding: 8px 16px;
+    color: #9ca3af;
+    background-color: #2d3748;
+    border-radius: 12px;
+    font-size: 12px;
+}

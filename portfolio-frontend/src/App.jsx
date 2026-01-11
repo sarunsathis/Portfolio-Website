@@ -10,6 +10,7 @@ import ProjectList from './components/projectList/ProjectList.jsx'
 import ColumnContainer from './components/columnContainer/columnContainer.jsx'
 import ContactForm from './components/contactForm/ContactForm.jsx'
 import ConnectNow from './components/connectNow/ConnectNow.jsx'
+import FollowMe from './components/followMe/FollowMe.jsx'
 
 
 function App() {
@@ -54,6 +55,7 @@ function App() {
           <ContactForm/>
           <div>
             <ConnectNow/>
+            <FollowMe/>
           </div>
         </ColumnContainer>
       </TabContainer>
