@@ -23,7 +23,8 @@
     width: 50px;
     border-radius: 50%;
     object-fit: cover;
-    border: 2px solid #ffffff;
+    border: 2px solid transparent;
+    background: linear-gradient(to right, oklch(0.623 0.214 259.815) 0%, oklch(0.627 0.265 303.9) 100%);
 }
 .header .logo-text{
     font-size: 24px;

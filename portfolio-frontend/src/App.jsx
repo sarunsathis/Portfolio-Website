@@ -16,7 +16,7 @@ import BlogList from './components/blogList/BlogList.jsx'
 
 
 function App() {
-  const [selectedSection, setSelectedSection] = useState('blogs');
+  const [selectedSection, setSelectedSection] = useState('home');
 
   function changeSelectedSection(selection) {
     console.log(selection);
